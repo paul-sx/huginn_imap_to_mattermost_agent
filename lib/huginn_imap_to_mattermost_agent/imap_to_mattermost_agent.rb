@@ -331,13 +331,14 @@ module Agents
           message: interpolated['message'],
           file_ids: file_ids
         }
-
+        log "Posting to mattermost: #{payload.to_json}"
         mattermost_client.post("/api/v4/posts", payload.to_json)
       end
 
     end
 
     def upload_file_to_mattermost(mail_part)
+      log "Uploading file #{mail_part.filename}"
       mail_mime = mail_part.content_type
       mail_filename = mail_part.filename
 
