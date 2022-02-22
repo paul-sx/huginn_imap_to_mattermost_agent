@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Write a short summary, because Rubygems requires one.}
   spec.description   = %q{Write a longer description or delete this line.}
 
-  spec.homepage      = "https://github.com/[my-github-username]/huginn_imap_to_mattermost_agent"
+  spec.homepage      = "https://github.com/paul-sx/huginn_imap_to_mattermost_agent"
 
   spec.license       = "MIT"
 
