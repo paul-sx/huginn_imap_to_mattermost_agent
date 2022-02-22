@@ -328,7 +328,7 @@ module Agents
       interpolate_with(message_context) do
         payload = {
           channel_id: channel_id,
-          message = interpolated['message']
+          message: interpolated['message']
           file_ids: file_ids
         }
 
