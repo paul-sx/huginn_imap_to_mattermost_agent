@@ -1,8 +1,11 @@
 # ImapToMattermostAgent
 
-Welcome to your new agent gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/huginn_imap_to_mattermost_agent`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is a stand-alone agent that takes most of the functionality of the
+built-in IMAP agent and takes the emails that it finds and uploads the picture
+attachments to mattermost.  
 
-TODO: Delete this and the text above, and describe your gem
+The agent does currently work for at least some use cases.  There's lots more
+that could be done (and really should be done). Use at your own risk.
 
 ## Installation
 
@@ -11,9 +14,9 @@ This gem is run as part of the [Huginn](https://github.com/huginn/huginn) projec
 Add this string to your Huginn's .env `ADDITIONAL_GEMS` configuration:
 
 ```ruby
-huginn_imap_to_mattermost_agent
+huginn_imap_to_mattermost_agent(github: paul-sx/huginn_imap_to_mattermost_agent)
 # when only using this agent gem it should look like this:
-ADDITIONAL_GEMS=huginn_imap_to_mattermost_agent
+ADDITIONAL_GEMS=huginn_imap_to_mattermost_agent(github: paul-sx/huginn_imap_to_mattermost_agent)
 ```
 
 And then execute:
@@ -40,7 +43,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/huginn_imap_to_mattermost_agent/fork )
+1. Fork it ( https://github.com/paul-sx/huginn_imap_to_mattermost_agent/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
