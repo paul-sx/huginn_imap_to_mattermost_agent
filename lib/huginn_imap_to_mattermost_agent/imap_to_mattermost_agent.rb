@@ -303,7 +303,7 @@ module Agents
             li << upload_file_to_mattermost(attachment)
           end
 
-          send_message(payload, file_ids)
+          send_message(payload, file_ids.flatten)
 
 
           #create_event payload: payload
