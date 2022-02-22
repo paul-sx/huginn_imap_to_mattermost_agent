@@ -359,7 +359,7 @@ module Agents
         builder.request :retry
         builder.request :multipart
         builder.authorization :Bearer, interpolated['mattermost_token']
-        builder.adapter :new_http
+        builder.adapter :net_http
       end
     end
     
